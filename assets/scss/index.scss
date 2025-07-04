@@ -21,7 +21,7 @@ header{
     row-gap: 2rem;
 
     @media only screen and (min-width:$tablet){
-        padding: 4rem 0;
+        padding: 4rem ;
         row-gap: 4rem;
     }
 
@@ -34,6 +34,11 @@ header{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: black;
     }
+
+   p{
+    font-size:large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
 
     .contenedor_fichas{
         width: 100%;
@@ -62,6 +67,8 @@ header{
         padding: 1.5rem;
         border-radius: 10px;
         display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
         justify-content: center;
         align-items: center;
     
@@ -78,10 +85,18 @@ header{
             transition: 0.4s;
         }
         h2{
+            color:aquamarine;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        p{
             color: white;
             text-align: center;
             position: relative;
             z-index: 10;
+
         }
         img{
             position: absolute;
